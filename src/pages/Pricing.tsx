@@ -66,7 +66,7 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <a href="#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">
+              <a href="/#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">
                 Join the Waitlist
               </a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q2 2026</p>
@@ -97,7 +97,7 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <a href="#waitlist" className="block w-full bg-[#0F2745] text-white text-sm font-medium px-6 py-3.5 rounded-md hover:bg-[#0C2038] transition text-center">
+              <a href="/#waitlist" className="block w-full bg-[#0F2745] text-white text-sm font-medium px-6 py-3.5 rounded-md hover:bg-[#0C2038] transition text-center">
                 Join the Waitlist
               </a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q2 2026</p>
@@ -125,7 +125,7 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <a href="#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">
+              <a href="/#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">
                 Join the Waitlist
               </a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q2 2026</p>
@@ -172,7 +172,7 @@ const Pricing = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             SoloRealtorAI is coming Q2 2026. Join the waitlist to be first in line.
           </p>
-          <a href="#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center">
+          <a href="/#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center">
             Join the Waitlist <ArrowRight className="ml-2 h-4 w-4" />
           </a>
         </div>
