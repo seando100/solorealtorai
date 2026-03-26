@@ -1,27 +1,28 @@
 import { Link } from 'react-router-dom';
 import { MessageSquare, FileText, Phone, ArrowRight, Briefcase, Heart, ChevronRight, Globe, Clock, Upload, Shield, Brain, Sparkles, Link2, Zap, Rss } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 // Reusable benefit card components
-const RealtorCard = ({ title, body }: { title: string; body: string }) => (
+const RealtorCard = ({ title, body, forYouLabel }: { title: string; body: string; forYouLabel: string }) => (
   <div className="bg-white border border-slate-200 rounded-xl p-5 max-w-sm w-full shadow-sm">
     <div className="flex items-center gap-3 mb-2">
       <div className="w-8 h-8 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
         <Briefcase className="h-4 w-4 text-[#0F2745]" />
       </div>
-      <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">For You</span>
+      <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">{forYouLabel}</span>
     </div>
     <p className="text-sm font-semibold text-slate-800 mb-1">{title}</p>
     <p className="text-sm text-slate-500 leading-relaxed">{body}</p>
   </div>
 );
 
-const ClientCard = ({ title, body }: { title: string; body: string }) => (
+const ClientCard = ({ title, body, forClientsLabel }: { title: string; body: string; forClientsLabel: string }) => (
   <div className="bg-white border border-slate-200 rounded-xl p-5 max-w-sm w-full shadow-sm">
     <div className="flex items-center gap-3 mb-2">
       <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
         <Heart className="h-4 w-4 text-blue-600" />
       </div>
-      <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">For Buyers & Sellers</span>
+      <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">{forClientsLabel}</span>
     </div>
     <p className="text-sm font-semibold text-slate-800 mb-1">{title}</p>
     <p className="text-sm text-slate-500 leading-relaxed">{body}</p>
@@ -39,18 +40,20 @@ const StepIcon = ({ icon: Icon, label, showLine = true }: { icon: React.ElementT
 );
 
 const Benefits = () => {
+  const { t } = useTranslation();
+  const forYou = t('benefits.forYou');
+  const forClients = t('benefits.forClients');
+
   return (
     <>
       {/* ── Hero ── */}
       <section className="pt-16 md:pt-24 pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Better for You. Better for Buyers & Sellers.
+            {t('benefits.heroTitle')}
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            When your intake runs smarter, everyone wins. You reclaim your time and walk into every
-            meeting prepared. Your clients get the responsive, professional experience they
-            deserve — from the very first interaction.
+            {t('benefits.heroSubtitle')}
           </p>
         </div>
       </section>
@@ -59,9 +62,9 @@ const Benefits = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">The Intake Journey</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">{t('benefits.journeyTitle')}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Follow a client from first contact to first showing — and see how every step creates value for both sides.
+              {t('benefits.journeySubtitle')}
             </p>
           </div>
 
@@ -69,62 +72,38 @@ const Benefits = () => {
 
             {/* Step 1: Client Reaches Out */}
             <div className="flex md:justify-end">
-              <RealtorCard
-                title="Never miss a new lead"
-                body="Intake runs 24/7 — nights, weekends, open house days. Every buyer and seller is captured the moment they reach out. No more lost leads to voicemail or after-hours gaps."
-              />
+              <RealtorCard forYouLabel={forYou} title={t('benefits.j1AgentTitle')} body={t('benefits.j1AgentBody')} />
             </div>
-            <StepIcon icon={Phone} label="Client Reaches Out" />
+            <StepIcon icon={Phone} label={t('benefits.stepClientReachesOut')} />
             <div className="flex md:justify-start">
-              <ClientCard
-                title="Get a response the moment you're ready"
-                body="No voicemail, no waiting until Monday. Reach out at 11pm on a Sunday when you find the perfect listing and get an immediate, helpful response. Your home search starts on your schedule."
-              />
+              <ClientCard forClientsLabel={forClients} title={t('benefits.j1ClientTitle')} body={t('benefits.j1ClientBody')} />
             </div>
 
             {/* Step 2: AI Conversation */}
             <div className="flex md:justify-end">
-              <RealtorCard
-                title="Every detail captured automatically"
-                body="Structured intake with all the facts you need — no scribbled notes, no missed details, no 20-minute fact-finding calls. Every answer organized and ready for review."
-              />
+              <RealtorCard forYouLabel={forYou} title={t('benefits.j2AgentTitle')} body={t('benefits.j2AgentBody')} />
             </div>
-            <StepIcon icon={MessageSquare} label="AI Conversation" />
+            <StepIcon icon={MessageSquare} label={t('benefits.stepAiConversation')} />
             <div className="flex md:justify-start">
-              <ClientCard
-                title="Share what you need — conversationally"
-                body="No intimidating forms. A warm, helpful conversation that feels like talking to a real person — in English or Spanish. Describe your dream home at your own pace."
-              />
+              <ClientCard forClientsLabel={forClients} title={t('benefits.j2ClientTitle')} body={t('benefits.j2ClientBody')} />
             </div>
 
             {/* Step 3: Agent Reviews */}
             <div className="flex md:justify-end">
-              <RealtorCard
-                title="Walk into every meeting fully prepared"
-                body="AI-generated lead brief with buyer qualification signals, property preference analysis, and suggested listings — before you ever schedule a showing. Know the client, the budget, and the right questions."
-              />
+              <RealtorCard forYouLabel={forYou} title={t('benefits.j3AgentTitle')} body={t('benefits.j3AgentBody')} />
             </div>
-            <StepIcon icon={FileText} label="Agent Reviews" />
+            <StepIcon icon={FileText} label={t('benefits.stepAgentReviews')} />
             <div className="flex md:justify-start">
-              <ClientCard
-                title="Your agent already understands what you need"
-                body="No repeating yourself. No starting from zero. Your first real conversation starts where it should — with curated listings, market insights, and next steps."
-              />
+              <ClientCard forClientsLabel={forClients} title={t('benefits.j3ClientTitle')} body={t('benefits.j3ClientBody')} />
             </div>
 
             {/* Step 4: First Showing */}
             <div className="flex md:justify-end">
-              <RealtorCard
-                title="More time for what matters"
-                body="Spend your time on showings, negotiations, and closings — not copying intake notes from voicemail or chasing down basic client preferences. Focus on selling real estate."
-              />
+              <RealtorCard forYouLabel={forYou} title={t('benefits.j4AgentTitle')} body={t('benefits.j4AgentBody')} />
             </div>
-            <StepIcon icon={ChevronRight} label="First Showing" showLine={false} />
+            <StepIcon icon={ChevronRight} label={t('benefits.stepFirstShowing')} showLine={false} />
             <div className="flex md:justify-start">
-              <ClientCard
-                title="A faster path to your next home"
-                body="From 'we're looking for a house' to a prepared, personalized showing — faster than you thought possible. The expertise of a top-producing team with the personal attention of a solo agent."
-              />
+              <ClientCard forClientsLabel={forClients} title={t('benefits.j4ClientTitle')} body={t('benefits.j4ClientBody')} />
             </div>
           </div>
         </div>
@@ -134,9 +113,9 @@ const Benefits = () => {
       <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">Every Feature, Two Winners</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">{t('benefits.featuresTitle')}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Beyond the intake journey, every capability in SoloRealtorAI creates a ripple effect — making your business more efficient and your clients' experience more professional.
+              {t('benefits.featuresSubtitle')}
             </p>
           </div>
 
@@ -147,16 +126,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Globe className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Bilingual Intake</h3>
+                <h3 className="text-base font-semibold">{t('benefits.bilingualTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Serve Spanish-speaking buyers and sellers without hiring bilingual staff or paying for translation services.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.bilingualAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Communicate in the language you're most comfortable in — from the very first interaction.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.bilingualClient')}</p>
                 </div>
               </div>
             </div>
@@ -167,17 +146,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Phone className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Phone Intake</h3>
+                <h3 className="text-base font-semibold">{t('benefits.phoneIntakeTitle')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">A dedicated phone line that handles intake calls 24/7. Same structured summary, zero phone tag.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.phoneIntakeAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Prefer talking over typing? Call anytime and speak naturally — no hold music, no phone trees.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.phoneIntakeClient')}</p>
                 </div>
               </div>
             </div>
@@ -188,17 +167,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Upload className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Document Intelligence</h3>
+                <h3 className="text-base font-semibold">{t('benefits.docIntelTitle')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">AI analyzes uploaded pre-approval letters, disclosures, inspection reports, and HOA documents — extracting key details and flags before you review.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.docIntelAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">A simple, secure way to share what's needed. Clear checklist, encrypted upload, no confusion.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.docIntelClient')}</p>
                 </div>
               </div>
             </div>
@@ -209,16 +188,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Clock className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Triage & Urgency Detection</h3>
+                <h3 className="text-base font-semibold">{t('benefits.triageTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Color-coded aging, buyer motivation signals, and timeline urgency flags so you prioritize hot leads first.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.triageAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Time-sensitive situations get flagged and fast-tracked. Your urgent relocation or competitive offer gets the attention it deserves.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.triageClient')}</p>
                 </div>
               </div>
             </div>
@@ -229,16 +208,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Shield className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Privacy & Security</h3>
+                <h3 className="text-base font-semibold">{t('benefits.privSecTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">End-to-end encryption, financial data protection, and 30-day document retention with deletion rights.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.privSecAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your financial information and personal details are protected from the start. Fully automated, fully encrypted.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.privSecClient')}</p>
                 </div>
               </div>
             </div>
@@ -249,16 +228,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <MessageSquare className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Website Widget</h3>
+                <h3 className="text-base font-semibold">{t('benefits.widgetTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">One line of code embeds intake directly on your WordPress or any website. Capture leads where they already are — on your listings and landing pages.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.widgetAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Start your intake without leaving your agent's website. No new tabs, no separate portals, no friction.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.widgetClient')}</p>
                 </div>
               </div>
             </div>
@@ -269,17 +248,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Brain className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Intelligence Brief</h3>
+                <h3 className="text-base font-semibold">{t('benefits.aiBriefTitle')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Every intake generates a deep-dive analysis — buyer qualification, market comparables, neighborhood matching, and the follow-up questions that matter most.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.aiBriefAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your agent spots opportunities specific to your budget, timeline, and preferences — not just the one listing you asked about. Nothing falls through the cracks.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.aiBriefClient')}</p>
                 </div>
               </div>
             </div>
@@ -290,17 +269,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Sparkles className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Marketing Kit</h3>
+                <h3 className="text-base font-semibold">{t('benefits.marketingKitTitle')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Generate branded social posts and visual cards for Facebook, Instagram, LinkedIn, and Nextdoor in seconds — perfect for new listings and open house announcements.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.marketingKitAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Find your agent where you already browse — on social media, local directories, and community boards. One click starts your intake.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.marketingKitClient')}</p>
                 </div>
               </div>
             </div>
@@ -311,16 +290,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Link2 className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">CRM Integration</h3>
+                <h3 className="text-base font-semibold">{t('benefits.crmTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Connect HubSpot (free) and every completed intake automatically creates a contact with full details and AI context notes. Zero manual data entry.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crmAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your agent has your information organized and ready before your first showing. Faster follow-ups, fewer repeat questions.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crmClient')}</p>
                 </div>
               </div>
             </div>
@@ -331,16 +310,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Zap className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Zapier &amp; Webhooks</h3>
+                <h3 className="text-base font-semibold">{t('benefits.zapierTitle')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Send intake data to Google Sheets, Slack, Mailchimp, or any of 6,000+ apps automatically. Build the workflow that fits your business.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.zapierAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your submission triggers the right actions immediately — appointment scheduling, welcome emails, or follow-up reminders — without anyone manually pushing buttons.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.zapierClient')}</p>
                 </div>
               </div>
             </div>
@@ -351,17 +330,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Rss className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Blog Generation</h3>
+                <h3 className="text-base font-semibold">{t('benefits.blogGenTitle')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Generate SEO-optimized blog posts tailored to your specialties and location. Each post comes with title, article, keywords, and a social media teaser — content marketing without the struggle.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{forYou}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.blogGenAgent')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">For Buyers & Sellers</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Find helpful, expert real estate content from a local agent you can trust — not generic internet advice. When you're ready, your agent is one click away.</p>
+                  <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">{forClients}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.blogGenClient')}</p>
                 </div>
               </div>
             </div>
@@ -373,32 +352,30 @@ const Benefits = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-            The Real Difference
+            {t('benefits.bottomTitle')}
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-8">
-            Solo real estate agents don't have a team of assistants handling calls, intake coordinators, or 24/7 answering services.
-            Your clients don't know that — and with SoloRealtorAI, they'll never need to. Every interaction
-            feels like a top-producing team with the personal attention only a solo agent can provide.
+            {t('benefits.bottomBody')}
           </p>
           <p className="text-sm text-slate-400 mb-10">
-            Great client relationships start before the first showing.
+            {t('benefits.bottomTagline')}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/#waitlist"
               className="bg-[#0F2745] text-white px-8 py-3.5 rounded-md text-sm font-semibold hover:bg-[#0C2038] transition inline-flex items-center gap-2"
             >
-              Join the Waitlist
+              {t('nav.joinWaitlist')}
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               to="/features"
               className="text-sm font-medium text-slate-500 hover:text-slate-900 transition"
             >
-              See all features →
+              {t('benefits.seeFeatures')}
             </Link>
           </div>
-          <p className="mt-3 text-xs text-slate-400">14-day free trial · Cancel anytime</p>
+          <p className="mt-3 text-xs text-slate-400">{t('benefits.trialNote')}</p>
         </div>
       </section>
     </>

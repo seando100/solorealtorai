@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { BarChart3, Mail, Shield, ArrowRight, Sparkles, Phone, Upload, FileSearch, Clock, Brain, Link2, Rss, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const BrandSettingsIllustration = () => (
   <div className="relative">
@@ -299,6 +300,8 @@ const MarketingKitIllustration = () => (
 );
 
 const Features = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-24">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
@@ -306,10 +309,10 @@ const Features = () => {
         {/* Page header */}
         <div className="text-center mb-20">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Built for the Solo Real Estate Agent
+            {t('features.pageTitle')}
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need — without adding overhead or hiring staff.
+            {t('features.pageSubtitle')}
           </p>
         </div>
 
@@ -317,19 +320,18 @@ const Features = () => {
         <div id="ai-intake" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Intake That Runs Itself
+              {t('features.intakeTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Buyers and sellers get a conversational AI intake or a structured form — in English or Spanish.
-              You get the details you need. No phone tag, no back-and-forth, no scheduling required on your end.
+              {t('features.intakeDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Conversational AI chat mode and structured form mode</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Give your AI assistant a name — clients meet "Sage" or "Parker," not a generic bot</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Bilingual — clients choose English or Spanish at the start</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Fully customizable intake questions tailored to your specialization</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your disclaimer presented to every client before they begin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your logo, business name, and greeting — clients never see SoloRealtorAI</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet5')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intakeBullet6')}</li>
             </ul>
           </div>
           <ChatModeScreenshot />
@@ -342,19 +344,17 @@ const Features = () => {
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Know the Client Before the First Meeting
+              {t('features.summaryTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every submission arrives with a structured lead summary and AI-generated context notes
-              — flagging buyer qualification signals, market timing considerations, neighborhood fit,
-              and suggested follow-up questions — so you're prepared the moment you pick up the phone.
+              {t('features.summaryDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Organized client profile: name, contact, location, and property preferences</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI contextual notes — qualification signals, market analysis, and listing suggestions — for your eyes only</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Suggested follow-up questions tailored to the transaction type</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Delivered to your inbox the moment intake is submitted</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Client receives a clean, branded confirmation with their submission summary</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.summaryBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.summaryBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.summaryBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.summaryBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.summaryBullet5')}</li>
             </ul>
           </div>
         </div>
@@ -364,22 +364,20 @@ const Features = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Phone className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.phoneLabel')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Phone Intake — 24/7
+              {t('features.phoneTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Give your business a dedicated phone number where callers speak naturally with your AI
-              assistant. No hold music, no phone trees — just a professional conversation that captures
-              every detail and delivers the same structured summary as chat intake.
+              {t('features.phoneDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Dedicated local phone number for your business</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Callers speak naturally — your AI assistant guides the conversation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Same structured summary, AI context notes, and email notifications</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Available 24/7 — never miss an after-hours or weekend call</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Intake source clearly labeled (Web Chat vs. Phone Call) in your portal</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.phoneBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.phoneBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.phoneBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.phoneBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.phoneBullet5')}</li>
             </ul>
           </div>
           {/* Phone illustration */}
@@ -474,23 +472,21 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Upload className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.docLabel')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Documents In, Insights Out
+              {t('features.docTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Request documents from clients with one click. AI recommends what to ask for based on the
-              transaction type, clients upload securely, and every document is automatically analyzed — key dates,
-              findings, red flags, and a transaction-relevant summary — ready for your review.
+              {t('features.docDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI recommends documents based on transaction type and property details</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Clients upload securely via a branded, encrypted portal</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI extracts key dates, findings, and transaction-relevant highlights from each document</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Handles PDFs, images, scanned documents, and Word files</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> 30-day secure retention — pass-through, not a vault</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> No human ever views client documents — fully automated</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet5')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.docBullet6')}</li>
             </ul>
           </div>
         </div>
@@ -500,23 +496,20 @@ const Features = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Brain className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.briefLabel')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Intelligence Brief
+              {t('features.briefTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the client said.
-              The Intelligence Brief identifies buyer qualification signals, market comparable analysis, neighborhood
-              fit scoring, and suggests the follow-up questions that matter most — so you walk into
-              every meeting with the insight of a top-producing team.
+              {t('features.briefDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Buyer qualification assessment — budget-to-market alignment, pre-approval strength, and motivation signals</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Market comparable analysis with price range positioning and inventory availability</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Neighborhood and school district matching based on stated preferences</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Suggested follow-up questions tailored to the specific transaction</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Delivered alongside the intake summary — no extra step required</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.briefBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.briefBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.briefBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.briefBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.briefBullet5')}</li>
             </ul>
           </div>
           {/* Intelligence Brief illustration */}
@@ -586,20 +579,18 @@ const Features = () => {
         <div id="brand-settings" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Your Brand, Your Link
+              {t('features.brandTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Clients never see "SoloRealtorAI." They see your business name, your logo, and your intake
-              page — at a URL you control. Every detail is configurable from your admin portal,
-              and when they're ready to meet, send a one-click scheduling invite.
+              {t('features.brandDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your own vanity URL (e.g. solorealtorai.com/yourbusiness)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Upload your logo — shown on every client-facing screen and email</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Set your assistant's name, client greeting, and specialization focus</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Configure disclaimers in English and Spanish</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pause intake instantly with a custom unavailability message</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Send showing invites via Calendly or any scheduling link</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet5')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.brandBullet6')}</li>
             </ul>
           </div>
           <BrandSettingsIllustration />
@@ -613,23 +604,21 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Sparkles className="h-3 w-3" />
-              Pro Plan
+              {t('features.marketingLabel')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Look Professional Online, Instantly
+              {t('features.marketingTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              The Marketing Kit generates platform-ready social media posts and professionally branded
-              visual cards in seconds — tailored to your listings, your open houses, and your intake link.
-              No designer. No copywriter. No extra tools.
+              {t('features.marketingDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI-written post copy for Facebook, Instagram, LinkedIn, and Nextdoor</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Branded visual cards pre-sized for every platform — download as PNG, ready to upload</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Edit the card headline (AI-suggested, fully customizable) to match your voice</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> 5 color themes — or use your brand color pulled automatically from your logo</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Website banner sizes included for your business website</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Generate in English or Spanish — bilingual from the start</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet5')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.marketingBullet6')}</li>
             </ul>
           </div>
         </div>
@@ -638,19 +627,17 @@ const Features = () => {
         <div id="integrations" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Connect to the Tools You Already Use
+              {t('features.integrationsTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every completed intake can automatically flow to your CRM, your spreadsheets, your project
-              management tools — wherever you need it. No copy-pasting, no manual data entry, no switching
-              between tabs.
+              {t('features.integrationsDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>HubSpot CRM</strong> — connect your free HubSpot account and every intake automatically creates a contact with full details and AI context notes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Zapier &amp; Make</strong> — add a webhook URL and every intake fires to 6,000+ apps: Google Sheets, Slack, Mailchimp, and more</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Custom webhooks</strong> — send intake data to any endpoint with HMAC-signed payloads for security</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Calendly</strong> — send one-click consultation invites with personalized booking links</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Connect and disconnect in seconds — no developer required</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <span dangerouslySetInnerHTML={{ __html: t('features.intBullet1') }} /></li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <span dangerouslySetInnerHTML={{ __html: t('features.intBullet2') }} /></li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <span dangerouslySetInnerHTML={{ __html: t('features.intBullet3') }} /></li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <span dangerouslySetInnerHTML={{ __html: t('features.intBullet4') }} /></li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.intBullet5')}</li>
             </ul>
           </div>
           {/* Integrations illustration */}
@@ -750,22 +737,20 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Rss className="h-3 w-3" />
-              Pro Plan
+              {t('features.blogLabel')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Blog Posts That Bring Clients to You
+              {t('features.blogTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Generate SEO-optimized blog posts tailored to your brokerage, your specialties, and your
-              market — in seconds. Each post comes with a title, article, meta description, keywords,
-              and a ready-to-post social media teaser. Content marketing without the content struggle.
+              {t('features.blogDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI-suggested topics based on your market and specialty</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full SEO-optimized article (600-800 words) with meta description and keywords</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Social media teaser ready to post on any platform</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pro: 3 posts/month · Pro+: 10 posts/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Copy any section with one click — paste directly to your website or social</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.blogBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.blogBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.blogBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.blogBullet4')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.blogBullet5')}</li>
             </ul>
           </div>
         </div>
@@ -774,18 +759,16 @@ const Features = () => {
         <div id="transcripts" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Full Conversation History
+              {t('features.transcriptTitle')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every intake conversation — chat or phone — is preserved as a complete transcript.
-              See exactly what your client said, how the AI guided the conversation, and review
-              the full context before the showing or consultation. Nothing gets lost in translation.
+              {t('features.transcriptDesc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full chat bubble view of every conversation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Chat and phone intake transcripts in one place</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Review before the meeting — see exactly what the buyer or seller described</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Source label: Web Chat vs. Phone Call</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.transcriptBullet1')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.transcriptBullet2')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.transcriptBullet3')}</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t('features.transcriptBullet4')}</li>
             </ul>
           </div>
           {/* Transcript illustration */}
@@ -833,18 +816,18 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <BarChart3 className="h-4 w-4 text-primary" />
-                Admin Portal
+                {t('features.adminTitle')}
               </CardTitle>
               <CardDescription>
-                Review every submission, track status, manage documents, and triage your lead pipeline in one place.
+                {t('features.adminDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• Color-coded submission aging and triage</li>
-                <li>• Status workflow (new → showing → closing)</li>
-                <li>• Document request and review dashboard</li>
-                <li>• Chat and phone intake unified view</li>
+                <li>• {t('features.adminBullet1')}</li>
+                <li>• {t('features.adminBullet2')}</li>
+                <li>• {t('features.adminBullet3')}</li>
+                <li>• {t('features.adminBullet4')}</li>
               </ul>
             </CardContent>
           </Card>
@@ -853,17 +836,17 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <Mail className="h-4 w-4 text-primary" />
-                Email Notifications
+                {t('features.emailTitle')}
               </CardTitle>
               <CardDescription>
-                You and your client both get a confirmation the moment an intake is submitted.
+                {t('features.emailDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• Instant agent alert email</li>
-                <li>• Professional client confirmation</li>
-                <li>• Branded with your business identity</li>
+                <li>• {t('features.emailBullet1')}</li>
+                <li>• {t('features.emailBullet2')}</li>
+                <li>• {t('features.emailBullet3')}</li>
               </ul>
             </CardContent>
           </Card>
@@ -872,18 +855,18 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <Shield className="h-4 w-4 text-primary" />
-                Security &amp; Data Protection
+                {t('features.securityTitle')}
               </CardTitle>
               <CardDescription>
-                Enterprise-grade security with AI-powered data boundary enforcement.
+                {t('features.securityDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• AES-256 encryption at rest, TLS in transit</li>
-                <li>• AI detects and blocks SSN, credit card, and government ID data in real time</li>
-                <li>• No human review — fully automated AI processing</li>
-                <li>• 30-day document retention with deletion rights</li>
+                <li>• {t('features.securityBullet1')}</li>
+                <li>• {t('features.securityBullet2')}</li>
+                <li>• {t('features.securityBullet3')}</li>
+                <li>• {t('features.securityBullet4')}</li>
               </ul>
             </CardContent>
           </Card>
@@ -891,23 +874,23 @@ const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">{t('features.ctaTitle')}</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Coming Q2 2026.
+            {t('features.ctaSubtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/#waitlist"
               className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center justify-center"
             >
-              Join the Waitlist
+              {t('nav.joinWaitlist')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
             <Link
               to="/pricing"
               className="text-sm font-medium text-gray-700 hover:text-black transition-colors inline-flex items-center justify-center px-6 py-3"
             >
-              View Pricing
+              {t('features.viewPricing')}
             </Link>
           </div>
         </div>
