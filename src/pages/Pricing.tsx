@@ -53,7 +53,7 @@ const Pricing = () => {
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <Card className="border border-slate-200 flex flex-col">
             <CardHeader className="pb-2 pt-8 px-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">{t('pricing.starter')}</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">{t('pricing.starter')}</p>
               <div className="mb-1">
                 <span className="text-5xl font-bold">$49</span>
                 <span className="text-muted-foreground text-lg"> {t('pricing.perMonth')}</span>
@@ -109,7 +109,7 @@ const Pricing = () => {
 
           <Card className="border border-slate-200 flex flex-col relative">
             <CardHeader className="pb-2 pt-8 px-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3 flex items-center gap-1.5">
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3 flex items-center gap-1.5">
                 <Phone className="h-3 w-3" /> {t('pricing.proPlus')}
               </p>
               <div className="mb-1">

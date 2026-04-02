@@ -4,7 +4,7 @@ import { useTranslation, Trans } from 'react-i18next';
 
 const FAQ = () => {
   const { t } = useTranslation();
-  const SECTION_LABEL = "text-xs font-semibold uppercase tracking-widest text-slate-400 pt-10 pb-2 px-1 border-b border-slate-100 mb-2";
+  const SECTION_LABEL = "text-xs font-semibold uppercase tracking-widest text-slate-500 pt-10 pb-2 px-1 border-b border-slate-100 mb-2";
 
   return (
     <section className="py-24">
