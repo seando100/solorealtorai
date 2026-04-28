@@ -5,27 +5,23 @@
   "nav.faq": "FAQ",
   "nav.blog": "Blog",
   "nav.joinWaitlist": "Join the Waitlist",
-
   "footer.tagline": "AI-powered client intake for real estate professionals.",
   "footer.privacy": "Privacy",
   "footer.terms": "Terms",
   "footer.contact": "Contact",
   "footer.copyright": "SoloSolutionsAI. All rights reserved.",
   "footer.product": "A SoloSolutionsAI Product",
-
   "index.badge": "AI-Powered Real Estate Intake",
   "index.badgeLaunch": "Coming Q2 2026",
   "index.heroTitle": "Your Next Client Intake Runs Itself.",
   "index.heroSubtitle": "SoloRealtorAI handles client intake by chat, phone, or website widget — captures every detail about property preferences, timelines, and budget — and delivers a structured lead summary with AI insights — so you're prepared before the first showing.",
   "index.seeFeatures": "See all features →",
   "index.beFirst": "Be the first to know when we launch",
-
   "index.trustEncrypted": "Encrypted & secure",
   "index.trustBilingual": "English & Spanish",
   "index.trustChannels": "Chat, phone & widget intake",
   "index.trustAlerts": "Instant email alerts",
   "index.trustSetup": "Setup in under 10 minutes",
-
   "index.painTitle": "Sound familiar?",
   "index.painSubtitle": "Solo real estate agents lose leads and commissions to the same three problems every day.",
   "index.painColdTitle": "Leads going cold",
@@ -35,7 +31,6 @@
   "index.painAfterHoursTitle": "After-hours inquiries from serious buyers",
   "index.painAfterHoursBody": "A relocating family finds your listing at 11pm on a Sunday. They're ready to schedule a tour, have questions about the neighborhood — and there's no way to tell you. They move on to the next agent.",
   "index.painFooter": "SoloRealtorAI handles all three — automatically.",
-
   "index.featuresTitle": "Everything you need. Nothing you don't.",
   "index.featuresSubtitle": "Six powerful capabilities that transform how solo real estate agents manage new leads.",
   "index.featAiIntakeTitle": "AI Client Intake",
@@ -51,7 +46,6 @@
   "index.featMarketingTitle": "Marketing Kit",
   "index.featMarketingBody": "Generate platform-ready social posts and branded visual cards for Facebook, Instagram, LinkedIn, and Nextdoor — in seconds. Perfect for listings and open houses.",
   "index.learnMore": "Learn more",
-
   "index.howTitle": "Up and running in minutes",
   "index.howSubtitle": "From first login to receiving your first lead — three simple steps.",
   "index.howStep1Title": "Set up your profile",
@@ -60,7 +54,6 @@
   "index.howStep2Desc": "Add it to your website, email signature, listing pages, or anywhere you connect with buyers and sellers. Your AI handles every conversation — 24/7.",
   "index.howStep3Title": "Review and respond",
   "index.howStep3Desc": "Get a structured lead summary with AI insights the moment a client submits. Know the budget, the timeline, and the must-haves before you ever schedule a showing.",
-
   "index.dualTitle": "Better for You. Better for Buyers & Sellers.",
   "index.dualSubtitle": "When your intake runs smarter, everyone wins — you reclaim your time, and clients get the responsive, prepared experience they deserve.",
   "index.forYou": "For You",
@@ -87,7 +80,6 @@
   "index.dual4ClientBody": "From \"we're looking for a house\" to a prepared, personalized showing — faster than you thought possible. The expertise of a top-producing team with the personal attention of a solo agent.",
   "index.dualTagline": "Great client relationships start before the first showing.",
   "index.seeAllBenefits": "See all benefits",
-
   "index.pricingTitle": "Simple, transparent pricing",
   "index.pricingSubtitle": "Start free for 14 days. Cancel anytime.",
   "index.starterLabel": "Starter",
@@ -116,7 +108,6 @@
   "index.perMonth": "/month",
   "index.allPlansNote": "All plans include a 14-day free trial.",
   "index.comparePlans": "Compare plans →",
-
   "index.waitlistTitle": "Get notified at launch",
   "index.waitlistSubtitle": "SoloRealtorAI is coming Q2 2026. Leave your info and we'll let you know the moment it's ready.",
   "index.waitlistName": "Name",
@@ -129,15 +120,12 @@
   "index.waitlistDisclaimer": "We'll notify you when SoloRealtorAI launches. No spam, ever.",
   "index.waitlistSuccessTitle": "You're on the list!",
   "index.waitlistSuccessBody": "We'll notify you when SoloRealtorAI launches.",
-
   "index.closingTitle": "Your lead pipeline runs while you're at a showing.",
   "index.closingSubtitle": "Stop losing buyers and sellers to missed calls and after-hours gaps. Chat, phone, and document intake — always on, always branded, always ready.",
   "index.viewPricing": "View pricing →",
   "index.closingLaunch": "Coming Q2 2026",
-
   "features.pageTitle": "Built for the Solo Real Estate Agent",
   "features.pageSubtitle": "Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need — without adding overhead or hiring staff.",
-
   "features.intakeTitle": "Intake That Runs Itself",
   "features.intakeDesc": "Buyers and sellers get a conversational AI intake or a structured form — in English or Spanish. You get the details you need. No phone tag, no back-and-forth, no scheduling required on your end.",
   "features.intakeBullet1": "Conversational AI chat mode and structured form mode",
@@ -146,7 +134,6 @@
   "features.intakeBullet4": "Fully customizable intake questions tailored to your specialization",
   "features.intakeBullet5": "Your disclaimer presented to every client before they begin",
   "features.intakeBullet6": "Your logo, business name, and greeting — clients never see SoloRealtorAI",
-
   "features.summaryTitle": "Know the Client Before the First Meeting",
   "features.summaryDesc": "Every submission arrives with a structured lead summary and AI-generated context notes — flagging buyer qualification signals, market timing considerations, neighborhood fit, and suggested follow-up questions — so you're prepared the moment you pick up the phone.",
   "features.summaryBullet1": "Organized client profile: name, contact, location, and property preferences",
@@ -154,7 +141,6 @@
   "features.summaryBullet3": "Suggested follow-up questions tailored to the transaction type",
   "features.summaryBullet4": "Delivered to your inbox the moment intake is submitted",
   "features.summaryBullet5": "Client receives a clean, branded confirmation with their submission summary",
-
   "features.phoneLabel": "Pro+ Plan",
   "features.phoneTitle": "AI Phone Intake — 24/7",
   "features.phoneDesc": "Give your business a dedicated phone number where callers speak naturally with your AI assistant. No hold music, no phone trees — just a professional conversation that captures every detail and delivers the same structured summary as chat intake.",
@@ -163,7 +149,6 @@
   "features.phoneBullet3": "Same structured summary, AI context notes, and email notifications",
   "features.phoneBullet4": "Available 24/7 — never miss an after-hours or weekend call",
   "features.phoneBullet5": "Intake source clearly labeled (Web Chat vs. Phone Call) in your portal",
-
   "features.docLabel": "Pro+ Plan",
   "features.docTitle": "Documents In, Insights Out",
   "features.docDesc": "Request documents from clients with one click. AI recommends what to ask for based on the transaction type, clients upload securely, and every document is automatically analyzed — key dates, findings, red flags, and a transaction-relevant summary — ready for your review.",
@@ -173,7 +158,6 @@
   "features.docBullet4": "Handles PDFs, images, scanned documents, and Word files",
   "features.docBullet5": "30-day secure retention — pass-through, not a vault",
   "features.docBullet6": "No human ever views client documents — fully automated",
-
   "features.briefLabel": "Pro+ Plan",
   "features.briefTitle": "AI Intelligence Brief",
   "features.briefDesc": "Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the client said. The Intelligence Brief identifies buyer qualification signals, market comparable analysis, neighborhood fit scoring, and suggests the follow-up questions that matter most — so you walk into every meeting with the insight of a top-producing team.",
@@ -182,7 +166,6 @@
   "features.briefBullet3": "Neighborhood and school district matching based on stated preferences",
   "features.briefBullet4": "Suggested follow-up questions tailored to the specific transaction",
   "features.briefBullet5": "Delivered alongside the intake summary — no extra step required",
-
   "features.brandTitle": "Your Brand, Your Link",
   "features.brandDesc": "Clients never see \"SoloRealtorAI.\" They see your business name, your logo, and your intake page — at a URL you control. Every detail is configurable from your admin portal, and when they're ready to meet, send a one-click scheduling invite.",
   "features.brandBullet1": "Your own vanity URL (e.g. solorealtorai.com/yourbusiness)",
@@ -191,7 +174,6 @@
   "features.brandBullet4": "Configure disclaimers in English and Spanish",
   "features.brandBullet5": "Pause intake instantly with a custom unavailability message",
   "features.brandBullet6": "Send showing invites via Calendly or any scheduling link",
-
   "features.marketingLabel": "Pro Plan",
   "features.marketingTitle": "Look Professional Online, Instantly",
   "features.marketingDesc": "The Marketing Kit generates platform-ready social media posts and professionally branded visual cards in seconds — tailored to your listings, your open houses, and your intake link. No designer. No copywriter. No extra tools.",
@@ -201,7 +183,6 @@
   "features.marketingBullet4": "5 color themes — or use your brand color pulled automatically from your logo",
   "features.marketingBullet5": "Website banner sizes included for your business website",
   "features.marketingBullet6": "Generate in English or Spanish — bilingual from the start",
-
   "features.integrationsTitle": "Connect to the Tools You Already Use",
   "features.integrationsDesc": "Every completed intake can automatically flow to your CRM, your spreadsheets, your project management tools — wherever you need it. No copy-pasting, no manual data entry, no switching between tabs.",
   "features.intBullet1": "**HubSpot CRM** — connect your free HubSpot account and every intake automatically creates a contact with full details and AI context notes",
@@ -209,7 +190,6 @@
   "features.intBullet3": "**Custom webhooks** — send intake data to any endpoint with HMAC-signed payloads for security",
   "features.intBullet4": "**Calendly** — send one-click consultation invites with personalized booking links",
   "features.intBullet5": "Connect and disconnect in seconds — no developer required",
-
   "features.blogLabel": "Pro Plan",
   "features.blogTitle": "AI Blog Posts That Bring Clients to You",
   "features.blogDesc": "Generate SEO-optimized blog posts tailored to your brokerage, your specialties, and your market — in seconds. Each post comes with a title, article, meta description, keywords, and a ready-to-post social media teaser. Content marketing without the content struggle.",
@@ -218,38 +198,32 @@
   "features.blogBullet3": "Social media teaser ready to post on any platform",
   "features.blogBullet4": "Pro: 3 posts/month · Pro+: 10 posts/month",
   "features.blogBullet5": "Copy any section with one click — paste directly to your website or social",
-
   "features.transcriptTitle": "Full Conversation History",
   "features.transcriptDesc": "Every intake conversation — chat or phone — is preserved as a complete transcript. See exactly what your client said, how the AI guided the conversation, and review the full context before the showing or consultation. Nothing gets lost in translation.",
   "features.transcriptBullet1": "Full chat bubble view of every conversation",
   "features.transcriptBullet2": "Chat and phone intake transcripts in one place",
   "features.transcriptBullet3": "Review before the meeting — see exactly what the buyer or seller described",
   "features.transcriptBullet4": "Source label: Web Chat vs. Phone Call",
-
   "features.adminTitle": "Admin Portal",
   "features.adminDesc": "Review every submission, track status, manage documents, and triage your lead pipeline in one place.",
   "features.adminBullet1": "Color-coded submission aging and triage",
   "features.adminBullet2": "Status workflow (new → showing → closing)",
   "features.adminBullet3": "Document request and review dashboard",
   "features.adminBullet4": "Chat and phone intake unified view",
-
   "features.emailTitle": "Email Notifications",
   "features.emailDesc": "You and your client both get a confirmation the moment an intake is submitted.",
   "features.emailBullet1": "Instant agent alert email",
   "features.emailBullet2": "Professional client confirmation",
   "features.emailBullet3": "Branded with your business identity",
-
   "features.securityTitle": "Security & Data Protection",
   "features.securityDesc": "Enterprise-grade security with AI-powered data boundary enforcement.",
   "features.securityBullet1": "AES-256 encryption at rest, TLS in transit",
   "features.securityBullet2": "AI detects and blocks SSN, credit card, and government ID data in real time",
   "features.securityBullet3": "No human review — fully automated AI processing",
   "features.securityBullet4": "30-day document retention with deletion rights",
-
   "features.ctaTitle": "Ready to Transform Your Business?",
   "features.ctaSubtitle": "Coming Q2 2026.",
   "features.viewPricing": "View Pricing",
-
   "benefits.heroTitle": "Better for You. Better for Buyers & Sellers.",
   "benefits.heroSubtitle": "When your intake runs smarter, everyone wins. You reclaim your time and walk into every meeting prepared. Your clients get the responsive, professional experience they deserve — from the very first interaction.",
   "benefits.forYou": "For You",
@@ -276,7 +250,6 @@
   "benefits.j4AgentBody": "Spend your time on showings, negotiations, and closings — not copying intake notes from voicemail or chasing down basic client preferences. Focus on selling real estate.",
   "benefits.j4ClientTitle": "A faster path to your next home",
   "benefits.j4ClientBody": "From 'we're looking for a house' to a prepared, personalized showing — faster than you thought possible. The expertise of a top-producing team with the personal attention of a solo agent.",
-
   "benefits.featuresTitle": "Every Feature, Two Winners",
   "benefits.featuresSubtitle": "Beyond the intake journey, every capability in SoloRealtorAI creates a ripple effect — making your business more efficient and your clients' experience more professional.",
   "benefits.bilingualTitle": "Bilingual Intake",
@@ -312,13 +285,11 @@
   "benefits.blogGenTitle": "AI Blog Generation",
   "benefits.blogGenAgent": "Generate SEO-optimized blog posts tailored to your specialties and location. Each post comes with title, article, keywords, and a social media teaser — content marketing without the struggle.",
   "benefits.blogGenClient": "Find helpful, expert real estate content from a local agent you can trust — not generic internet advice. When you're ready, your agent is one click away.",
-
   "benefits.bottomTitle": "The Real Difference",
   "benefits.bottomBody": "Solo real estate agents don't have a team of assistants handling calls, intake coordinators, or 24/7 answering services. Your clients don't know that — and with SoloRealtorAI, they'll never need to. Every interaction feels like a top-producing team with the personal attention only a solo agent can provide.",
   "benefits.bottomTagline": "Great client relationships start before the first showing.",
   "benefits.seeFeatures": "See all features →",
   "benefits.trialNote": "14-day free trial · Cancel anytime",
-
   "pricing.pageTitle": "Simple, Transparent Pricing",
   "pricing.pageSubtitle": "Start with the intake automation you need. Add the marketing tools when you're ready to grow.",
   "pricing.starter": "Starter",
@@ -351,11 +322,9 @@
   "pricing.proPlusFeat3": "Buyers and sellers speak naturally with your AI assistant — 24/7, no hold music",
   "pricing.proPlusFeat4": "Document Intelligence — request, receive, and AI-analyze transaction documents",
   "pricing.proPlusFeat5": "AI extracts key terms, property details, contingencies, and timeline highlights",
-  "pricing.proPlusFeat6": "Secure encrypted uploads with 30-day retention",
   "pricing.proPlusFeat7": "Phone number displayed in Marketing Kit materials",
   "pricing.trialNote": "All plans include a 14-day free trial with full access to all features. Your card is required at signup but you won't be charged until day 15.",
   "pricing.comingDate": "Coming Q2 2026",
-
   "pricing.faqTitle": "Frequently Asked Questions",
   "pricing.faq1Q": "What's included in the free trial?",
   "pricing.faq1A": "Your 14-day free trial gives you full access to everything — including the Marketing Kit. A credit card is required at signup, but you won't be charged until day 15.",
@@ -371,7 +340,6 @@
   "pricing.faq6A": "Yes. Cancel anytime from your account settings. Access continues through the end of your billing period. No cancellation fees.",
   "pricing.readyTitle": "Ready to Get Started?",
   "pricing.readySubtitle": "SoloRealtorAI is coming Q2 2026. Join the waitlist to be first in line.",
-
   "faq.pageTitle": "Frequently Asked Questions",
   "faq.pageSubtitle": "Everything you need to know about SoloRealtorAI — how it works, what's included, and how to get the most out of it.",
   "faq.sectionHowItWorks": "How It Works",
@@ -408,7 +376,6 @@
   "faq.stillHaveQuestions": "Still Have Questions?",
   "faq.hereToHelp": "We're here to help.",
   "faq.contactUs": "Contact Us",
-
   "contact.pageTitle": "Get In Touch",
   "contact.pageSubtitle": "Have questions about SoloRealtorAI? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
   "contact.emailTitle": "Email Us",
@@ -429,7 +396,6 @@
   "contact.submit": "Send Message",
   "contact.successTitle": "Thanks for reaching out!",
   "contact.successBody": "We'll notify you when SoloRealtorAI launches.",
-
   "privacy.title": "Privacy Policy",
   "privacy.lastUpdated": "Last Updated: March 21, 2026",
   "privacy.s1Title": "1. Introduction",
@@ -542,7 +508,6 @@
   "privacy.s14intro": "If you have questions about this Privacy Policy, wish to exercise your rights, or have concerns about our data practices, please contact us at:",
   "privacy.s14email": "Email: <a>privacy@solosolutionsai.com</a>",
   "privacy.s14address": "SoloSolutionsAI\nDunedin, Florida, United States",
-
   "terms.title": "Terms of Service",
   "terms.lastUpdated": "Last Updated: March 21, 2026",
   "terms.s1Title": "1. Acceptance of Terms",
@@ -638,11 +603,9 @@
   "terms.s18intro": "Questions about these Terms? Contact us at:",
   "terms.s18email": "Email: <a>legal@solosolutionsai.com</a>",
   "terms.s18address": "SoloSolutionsAI\nDunedin, Florida, United States",
-
   "notFound.title": "404",
   "notFound.message": "Oops! Page not found",
   "notFound.link": "Return to Home",
-
   "blog.headerTitle": "Blog",
   "blog.headerSubtitle": "Insights on AI, client onboarding, lead generation, and growing your practice.",
   "blog.readMore": "Read more",
@@ -651,7 +614,6 @@
   "blog.backToBlogLink": "Back to blog",
   "blog.ctaTitle": "Ready to modernize your intake process?",
   "blog.ctaBody": "Join the waitlist and be first to try AI-powered client onboarding.",
-
   "cookie.message": "We use cookies to improve your experience. By continuing to browse, you agree to our use of cookies.",
   "cookie.accept": "Accept",
   "cookie.learnMore": "Learn more"

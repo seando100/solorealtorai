@@ -5,27 +5,23 @@
   "nav.faq": "Preguntas frecuentes",
   "nav.blog": "Blog",
   "nav.joinWaitlist": "Unirse a la lista de espera",
-
   "footer.tagline": "Registro de clientes con IA para agentes inmobiliarios.",
   "footer.privacy": "Privacidad",
   "footer.terms": "Términos",
   "footer.contact": "Contacto",
   "footer.copyright": "SoloSolutionsAI. Todos los derechos reservados.",
   "footer.product": "Un producto de SoloSolutionsAI",
-
   "index.badge": "Registro inmobiliario con IA",
   "index.badgeLaunch": "Disponible en Q2 2026",
   "index.heroTitle": "Su próximo registro de clientes funciona solo.",
   "index.heroSubtitle": "SoloRealtorAI gestiona el registro de clientes por chat, teléfono o widget web — captura cada detalle sobre preferencias de propiedad, plazos y presupuesto — y entrega un resumen estructurado del prospecto con análisis de IA — para que esté preparado antes de la primera visita.",
   "index.seeFeatures": "Ver todas las funciones →",
   "index.beFirst": "Sea el primero en saber cuando lancemos",
-
   "index.trustEncrypted": "Cifrado y seguro",
   "index.trustBilingual": "Inglés y español",
   "index.trustChannels": "Registro por chat, teléfono y widget",
   "index.trustAlerts": "Alertas instantáneas por correo",
   "index.trustSetup": "Configuración en menos de 10 minutos",
-
   "index.painTitle": "¿Le suena familiar?",
   "index.painSubtitle": "Los agentes inmobiliarios independientes pierden prospectos y comisiones por los mismos tres problemas todos los días.",
   "index.painColdTitle": "Prospectos que se enfrían",
@@ -35,7 +31,6 @@
   "index.painAfterHoursTitle": "Consultas fuera de horario de compradores serios",
   "index.painAfterHoursBody": "Una familia que se muda encuentra su listado a las 11pm un domingo. Están listos para agendar una visita, tienen preguntas sobre el vecindario — y no hay forma de decírselo. Se van con el siguiente agente.",
   "index.painFooter": "SoloRealtorAI resuelve los tres — automáticamente.",
-
   "index.featuresTitle": "Todo lo que necesita. Nada que no.",
   "index.featuresSubtitle": "Seis capacidades poderosas que transforman cómo los agentes inmobiliarios independientes gestionan nuevos prospectos.",
   "index.featAiIntakeTitle": "Registro de clientes con IA",
@@ -51,7 +46,6 @@
   "index.featMarketingTitle": "Kit de marketing",
   "index.featMarketingBody": "Genere publicaciones para redes sociales y tarjetas visuales con su marca para Facebook, Instagram, LinkedIn y Nextdoor — en segundos. Perfecto para listados y jornadas de puertas abiertas.",
   "index.learnMore": "Más información",
-
   "index.howTitle": "Listo y funcionando en minutos",
   "index.howSubtitle": "Desde el primer inicio de sesión hasta recibir su primer prospecto — tres simples pasos.",
   "index.howStep1Title": "Configure su perfil",
@@ -60,7 +54,6 @@
   "index.howStep2Desc": "Agréguelo a su sitio web, firma de correo, páginas de listados o cualquier lugar donde conecta con compradores y vendedores. Su IA maneja cada conversación — 24/7.",
   "index.howStep3Title": "Revise y responda",
   "index.howStep3Desc": "Obtenga un resumen estructurado del prospecto con análisis de IA en el momento que el cliente envía. Conozca el presupuesto, el plazo y los requisitos antes de agendar una visita.",
-
   "index.dualTitle": "Mejor para usted. Mejor para compradores y vendedores.",
   "index.dualSubtitle": "Cuando su registro funciona más inteligentemente, todos ganan — usted recupera su tiempo y los clientes obtienen la experiencia preparada y receptiva que merecen.",
   "index.forYou": "Para usted",
@@ -87,7 +80,6 @@
   "index.dual4ClientBody": "De \"estamos buscando una casa\" a una visita preparada y personalizada — más rápido de lo que pensaba posible. La experiencia de un equipo de alto rendimiento con la atención personal de un agente independiente.",
   "index.dualTagline": "Las grandes relaciones con clientes comienzan antes de la primera visita.",
   "index.seeAllBenefits": "Ver todos los beneficios",
-
   "index.pricingTitle": "Precios simples y transparentes",
   "index.pricingSubtitle": "Comience gratis por 14 días. Cancele en cualquier momento.",
   "index.starterLabel": "Starter",
@@ -116,7 +108,6 @@
   "index.perMonth": "/mes",
   "index.allPlansNote": "Todos los planes incluyen prueba gratuita de 14 días.",
   "index.comparePlans": "Comparar planes →",
-
   "index.waitlistTitle": "Reciba notificación al lanzamiento",
   "index.waitlistSubtitle": "SoloRealtorAI llegará en Q2 2026. Deje su información y le avisaremos en cuanto esté listo.",
   "index.waitlistName": "Nombre",
@@ -129,15 +120,12 @@
   "index.waitlistDisclaimer": "Le avisaremos cuando SoloRealtorAI se lance. Sin spam, nunca.",
   "index.waitlistSuccessTitle": "¡Está en la lista!",
   "index.waitlistSuccessBody": "Le avisaremos cuando SoloRealtorAI se lance.",
-
   "index.closingTitle": "Su canal de prospectos funciona mientras está en una visita.",
   "index.closingSubtitle": "Deje de perder compradores y vendedores por llamadas perdidas y brechas fuera de horario. Registro por chat, teléfono y documentos — siempre activo, siempre con su marca, siempre listo.",
   "index.viewPricing": "Ver precios →",
   "index.closingLaunch": "Disponible en Q2 2026",
-
   "features.pageTitle": "Diseñado para el agente inmobiliario independiente",
   "features.pageSubtitle": "Registro por chat, teléfono o widget. Análisis documental con IA. Herramientas de marketing. Todo lo que necesita — sin agregar gastos generales ni contratar personal.",
-
   "features.intakeTitle": "Registro que funciona solo",
   "features.intakeDesc": "Compradores y vendedores obtienen un registro conversacional con IA o un formulario estructurado — en inglés o español. Usted obtiene los detalles que necesita. Sin llamadas perdidas, sin idas y vueltas, sin necesidad de agendar por su parte.",
   "features.intakeBullet1": "Modo de chat conversacional con IA y modo de formulario estructurado",
@@ -146,7 +134,6 @@
   "features.intakeBullet4": "Preguntas de registro totalmente personalizables según su especialización",
   "features.intakeBullet5": "Su aviso legal presentado a cada cliente antes de comenzar",
   "features.intakeBullet6": "Su logotipo, nombre de negocio y saludo — los clientes nunca ven SoloRealtorAI",
-
   "features.summaryTitle": "Conozca al cliente antes de la primera reunión",
   "features.summaryDesc": "Cada envío llega con un resumen estructurado del prospecto y notas contextuales generadas por IA — señalando señales de calificación del comprador, consideraciones de mercado, compatibilidad del vecindario y preguntas de seguimiento sugeridas — para que esté preparado en el momento que tome el teléfono.",
   "features.summaryBullet1": "Perfil organizado del cliente: nombre, contacto, ubicación y preferencias de propiedad",
@@ -154,7 +141,6 @@
   "features.summaryBullet3": "Preguntas de seguimiento sugeridas según el tipo de transacción",
   "features.summaryBullet4": "Entregado a su bandeja de entrada en el momento que se envía el registro",
   "features.summaryBullet5": "El cliente recibe una confirmación limpia y con su marca con el resumen de lo enviado",
-
   "features.phoneLabel": "Plan Pro+",
   "features.phoneTitle": "Registro telefónico con IA — 24/7",
   "features.phoneDesc": "Dé a su negocio un número de teléfono dedicado donde las personas llaman y hablan naturalmente con su asistente de IA. Sin música de espera, sin menús — solo una conversación profesional que captura cada detalle y entrega el mismo resumen estructurado que el registro por chat.",
@@ -163,7 +149,6 @@
   "features.phoneBullet3": "Mismo resumen estructurado, notas contextuales de IA y notificaciones por correo",
   "features.phoneBullet4": "Disponible 24/7 — nunca pierda una llamada fuera de horario o de fin de semana",
   "features.phoneBullet5": "Fuente del registro claramente etiquetada (Chat web vs. Llamada telefónica) en su portal",
-
   "features.docLabel": "Plan Pro+",
   "features.docTitle": "Documentos que entran, análisis que sale",
   "features.docDesc": "Solicite documentos a los clientes con un clic. La IA recomienda qué pedir según el tipo de transacción, los clientes cargan de forma segura, y cada documento se analiza automáticamente — fechas clave, hallazgos, alertas y un resumen relevante para la transacción — listo para su revisión.",
@@ -173,7 +158,6 @@
   "features.docBullet4": "Maneja PDFs, imágenes, documentos escaneados y archivos Word",
   "features.docBullet5": "Retención segura de 30 días — intermediario, no almacén permanente",
   "features.docBullet6": "Ningún ser humano ve documentos de clientes — totalmente automatizado",
-
   "features.briefLabel": "Plan Pro+",
   "features.briefTitle": "Informe de inteligencia de IA",
   "features.briefDesc": "Cada registro genera automáticamente un análisis profundo que va más allá de resumir lo que dijo el cliente. El Informe de Inteligencia identifica señales de calificación del comprador, análisis de comparables del mercado, puntuación de compatibilidad del vecindario y sugiere las preguntas de seguimiento más importantes — para que llegue a cada reunión con la perspicacia de un equipo de alto rendimiento.",
@@ -182,7 +166,6 @@
   "features.briefBullet3": "Compatibilidad de vecindario y distrito escolar basada en preferencias declaradas",
   "features.briefBullet4": "Preguntas de seguimiento sugeridas según la transacción específica",
   "features.briefBullet5": "Entregado junto al resumen del registro — sin pasos adicionales",
-
   "features.brandTitle": "Su marca, su enlace",
   "features.brandDesc": "Los clientes nunca ven \"SoloRealtorAI\". Ven el nombre de su negocio, su logotipo y su página de registro — en una URL que usted controla. Cada detalle es configurable desde su portal de administración, y cuando estén listos para reunirse, envíe una invitación de agenda con un clic.",
   "features.brandBullet1": "Su propia URL personalizada (ej. solorealtorai.com/sunegocio)",
@@ -191,7 +174,6 @@
   "features.brandBullet4": "Configure avisos legales en inglés y español",
   "features.brandBullet5": "Pause el registro al instante con un mensaje personalizado de no disponibilidad",
   "features.brandBullet6": "Envíe invitaciones a visitas vía Calendly o cualquier enlace de agenda",
-
   "features.marketingLabel": "Plan Pro",
   "features.marketingTitle": "Luzca profesional en línea, al instante",
   "features.marketingDesc": "El Kit de Marketing genera publicaciones listas para redes sociales y tarjetas visuales profesionales con su marca en segundos — personalizadas para sus listados, sus jornadas de puertas abiertas y su enlace de registro. Sin diseñador. Sin redactor. Sin herramientas adicionales.",
@@ -201,7 +183,6 @@
   "features.marketingBullet4": "5 temas de color — o use el color de su marca extraído automáticamente de su logotipo",
   "features.marketingBullet5": "Tamaños de banner para sitio web incluidos para su página de negocios",
   "features.marketingBullet6": "Genere en inglés o español — bilingüe desde el inicio",
-
   "features.integrationsTitle": "Conecte con las herramientas que ya usa",
   "features.integrationsDesc": "Cada registro completado puede fluir automáticamente a su CRM, sus hojas de cálculo, sus herramientas de gestión de proyectos — donde lo necesite. Sin copiar y pegar, sin entrada manual de datos, sin cambiar entre pestañas.",
   "features.intBullet1": "**HubSpot CRM** — conecte su cuenta gratuita de HubSpot y cada registro crea automáticamente un contacto con todos los detalles y notas contextuales de IA",
@@ -209,7 +190,6 @@
   "features.intBullet3": "**Webhooks personalizados** — envíe datos del registro a cualquier endpoint con cargas firmadas HMAC para seguridad",
   "features.intBullet4": "**Calendly** — envíe invitaciones de consulta con un clic con enlaces de reserva personalizados",
   "features.intBullet5": "Conecte y desconecte en segundos — sin necesidad de desarrollador",
-
   "features.blogLabel": "Plan Pro",
   "features.blogTitle": "Publicaciones de blog con IA que atraen clientes",
   "features.blogDesc": "Genere publicaciones de blog optimizadas para SEO adaptadas a su agencia, sus especialidades y su mercado — en segundos. Cada publicación incluye título, artículo, meta descripción, palabras clave y un avance listo para publicar en redes sociales. Marketing de contenido sin la lucha del contenido.",
@@ -218,38 +198,32 @@
   "features.blogBullet3": "Avance para redes sociales listo para publicar en cualquier plataforma",
   "features.blogBullet4": "Pro: 3 publicaciones/mes · Pro+: 10 publicaciones/mes",
   "features.blogBullet5": "Copie cualquier sección con un clic — pegue directamente en su sitio web o redes sociales",
-
   "features.transcriptTitle": "Historial completo de conversaciones",
   "features.transcriptDesc": "Cada conversación de registro — por chat o teléfono — se preserva como una transcripción completa. Vea exactamente lo que dijo su cliente, cómo la IA guió la conversación, y revise el contexto completo antes de la visita o consulta. Nada se pierde en la traducción.",
   "features.transcriptBullet1": "Vista completa de burbujas de chat de cada conversación",
   "features.transcriptBullet2": "Transcripciones de registro por chat y teléfono en un solo lugar",
   "features.transcriptBullet3": "Revise antes de la reunión — vea exactamente lo que el comprador o vendedor describió",
   "features.transcriptBullet4": "Etiqueta de fuente: Chat web vs. Llamada telefónica",
-
   "features.adminTitle": "Portal de administración",
   "features.adminDesc": "Revise cada envío, haga seguimiento del estado, gestione documentos y clasifique su canal de prospectos en un solo lugar.",
   "features.adminBullet1": "Antigüedad de envíos codificada por colores y clasificación",
   "features.adminBullet2": "Flujo de trabajo de estado (nuevo → visita → cierre)",
   "features.adminBullet3": "Panel de solicitud y revisión de documentos",
   "features.adminBullet4": "Vista unificada de registro por chat y teléfono",
-
   "features.emailTitle": "Notificaciones por correo",
   "features.emailDesc": "Usted y su cliente reciben una confirmación en el momento que se envía un registro.",
   "features.emailBullet1": "Correo de alerta instantánea al agente",
   "features.emailBullet2": "Confirmación profesional al cliente",
   "features.emailBullet3": "Con la marca de su identidad de negocio",
-
   "features.securityTitle": "Seguridad y protección de datos",
   "features.securityDesc": "Seguridad de nivel empresarial con aplicación de límites de datos potenciada por IA.",
   "features.securityBullet1": "Cifrado AES-256 en reposo, TLS en tránsito",
   "features.securityBullet2": "La IA detecta y bloquea datos de SSN, tarjetas de crédito e identificación gubernamental en tiempo real",
   "features.securityBullet3": "Sin revisión humana — procesamiento de IA totalmente automatizado",
   "features.securityBullet4": "Retención de documentos de 30 días con derechos de eliminación",
-
   "features.ctaTitle": "¿Listo para transformar su negocio?",
   "features.ctaSubtitle": "Disponible en Q2 2026.",
   "features.viewPricing": "Ver precios",
-
   "benefits.heroTitle": "Mejor para usted. Mejor para compradores y vendedores.",
   "benefits.heroSubtitle": "Cuando su registro funciona más inteligentemente, todos ganan. Usted recupera su tiempo y llega a cada reunión preparado. Sus clientes obtienen la experiencia profesional y receptiva que merecen — desde la primera interacción.",
   "benefits.forYou": "Para usted",
@@ -276,7 +250,6 @@
   "benefits.j4AgentBody": "Dedique su tiempo a visitas, negociaciones y cierres — no a copiar notas de registro del buzón de voz o perseguir preferencias básicas de clientes. Enfóquese en vender bienes raíces.",
   "benefits.j4ClientTitle": "Un camino más rápido a su próximo hogar",
   "benefits.j4ClientBody": "De 'estamos buscando una casa' a una visita preparada y personalizada — más rápido de lo que pensaba posible. La experiencia de un equipo de alto rendimiento con la atención personal de un agente independiente.",
-
   "benefits.featuresTitle": "Cada función, dos ganadores",
   "benefits.featuresSubtitle": "Más allá del recorrido del registro, cada capacidad en SoloRealtorAI crea un efecto dominó — haciendo su negocio más eficiente y la experiencia de sus clientes más profesional.",
   "benefits.bilingualTitle": "Registro bilingüe",
@@ -312,13 +285,11 @@
   "benefits.blogGenTitle": "Generación de blog con IA",
   "benefits.blogGenAgent": "Genere publicaciones de blog optimizadas para SEO adaptadas a sus especialidades y ubicación. Cada publicación incluye título, artículo, palabras clave y un avance para redes sociales — marketing de contenido sin la lucha.",
   "benefits.blogGenClient": "Encuentre contenido inmobiliario útil y experto de un agente local de confianza — no consejos genéricos de internet. Cuando esté listo, su agente está a un clic.",
-
   "benefits.bottomTitle": "La verdadera diferencia",
   "benefits.bottomBody": "Los agentes inmobiliarios independientes no tienen un equipo de asistentes atendiendo llamadas, coordinadores de registro ni servicios de contestación 24/7. Sus clientes no lo saben — y con SoloRealtorAI, nunca necesitarán saberlo. Cada interacción se siente como un equipo de alto rendimiento con la atención personal que solo un agente independiente puede ofrecer.",
   "benefits.bottomTagline": "Las grandes relaciones con clientes comienzan antes de la primera visita.",
   "benefits.seeFeatures": "Ver todas las funciones →",
   "benefits.trialNote": "Prueba gratuita de 14 días · Cancele en cualquier momento",
-
   "pricing.pageTitle": "Precios simples y transparentes",
   "pricing.pageSubtitle": "Comience con la automatización de registro que necesita. Agregue las herramientas de marketing cuando esté listo para crecer.",
   "pricing.starter": "Starter",
@@ -351,11 +322,9 @@
   "pricing.proPlusFeat3": "Compradores y vendedores hablan naturalmente con su asistente de IA — 24/7, sin música de espera",
   "pricing.proPlusFeat4": "Inteligencia documental — solicite, reciba y analice documentos de transacciones con IA",
   "pricing.proPlusFeat5": "La IA extrae términos clave, detalles de propiedad, contingencias y puntos destacados de plazos",
-  "pricing.proPlusFeat6": "Cargas cifradas seguras con retención de 30 días",
   "pricing.proPlusFeat7": "Número de teléfono mostrado en materiales del Kit de Marketing",
   "pricing.trialNote": "Todos los planes incluyen prueba gratuita de 14 días con acceso completo a todas las funciones. Se requiere tarjeta al registrarse pero no se le cobrará hasta el día 15.",
   "pricing.comingDate": "Disponible en Q2 2026",
-
   "pricing.faqTitle": "Preguntas frecuentes",
   "pricing.faq1Q": "¿Qué incluye la prueba gratuita?",
   "pricing.faq1A": "Su prueba gratuita de 14 días le da acceso completo a todo — incluyendo el Kit de Marketing. Se requiere tarjeta de crédito al registrarse, pero no se le cobrará hasta el día 15.",
@@ -371,7 +340,6 @@
   "pricing.faq6A": "Sí. Cancele en cualquier momento desde la configuración de su cuenta. El acceso continúa hasta el final de su período de facturación. Sin tarifas de cancelación.",
   "pricing.readyTitle": "¿Listo para comenzar?",
   "pricing.readySubtitle": "SoloRealtorAI llegará en Q2 2026. Únase a la lista de espera para ser el primero en la fila.",
-
   "faq.pageTitle": "Preguntas frecuentes",
   "faq.pageSubtitle": "Todo lo que necesita saber sobre SoloRealtorAI — cómo funciona, qué está incluido y cómo aprovecharlo al máximo.",
   "faq.sectionHowItWorks": "Cómo funciona",
@@ -408,7 +376,6 @@
   "faq.stillHaveQuestions": "¿Todavía tiene preguntas?",
   "faq.hereToHelp": "Estamos aquí para ayudar.",
   "faq.contactUs": "Contáctenos",
-
   "contact.pageTitle": "Contáctenos",
   "contact.pageSubtitle": "¿Tiene preguntas sobre SoloRealtorAI? Nos encantaría saber de usted. Envíenos un mensaje y responderemos lo antes posible.",
   "contact.emailTitle": "Escríbanos",
@@ -429,7 +396,6 @@
   "contact.submit": "Enviar mensaje",
   "contact.successTitle": "¡Gracias por comunicarse!",
   "contact.successBody": "Le avisaremos cuando SoloRealtorAI se lance.",
-
   "privacy.title": "Política de privacidad",
   "privacy.lastUpdated": "Última actualización: 21 de marzo de 2026",
   "privacy.s1Title": "1. Introducción",
@@ -542,7 +508,6 @@
   "privacy.s14intro": "Si tiene preguntas sobre esta Política de Privacidad, desea ejercer sus derechos o tiene inquietudes sobre nuestras prácticas de datos, contáctenos en:",
   "privacy.s14email": "Correo electrónico: <a>privacy@solosolutionsai.com</a>",
   "privacy.s14address": "SoloSolutionsAI\nDunedin, Florida, Estados Unidos",
-
   "terms.title": "Términos de servicio",
   "terms.lastUpdated": "Última actualización: 21 de marzo de 2026",
   "terms.s1Title": "1. Aceptación de los términos",
@@ -638,11 +603,9 @@
   "terms.s18intro": "¿Preguntas sobre estos Términos? Contáctenos en:",
   "terms.s18email": "Correo electrónico: <a>legal@solosolutionsai.com</a>",
   "terms.s18address": "SoloSolutionsAI\nDunedin, Florida, Estados Unidos",
-
   "notFound.title": "404",
   "notFound.message": "¡Ups! Página no encontrada",
   "notFound.link": "Volver al inicio",
-
   "blog.headerTitle": "Blog",
   "blog.headerSubtitle": "Perspectivas sobre IA, registro de clientes, generación de prospectos y crecimiento de su negocio.",
   "blog.readMore": "Leer más",
@@ -651,7 +614,6 @@
   "blog.backToBlogLink": "Volver al blog",
   "blog.ctaTitle": "¿Listo para modernizar su proceso de registro?",
   "blog.ctaBody": "Únase a la lista de espera y sea el primero en probar el registro de clientes con IA.",
-
   "cookie.message": "Usamos cookies para mejorar su experiencia. Al continuar navegando, acepta nuestro uso de cookies.",
   "cookie.accept": "Aceptar",
   "cookie.learnMore": "Más información"
